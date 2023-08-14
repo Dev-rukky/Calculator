@@ -15,7 +15,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #171717;
+    background: url(./bg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .container {
@@ -25,7 +28,8 @@ body {
     background-color: #fff;
     padding: 10px 20px 20px;
     border-radius: 12px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 5px 10px rgba(101, 101, 101, 0.234);
+    border: 1px solid #000;
 }
 
 /* .container:hover {
@@ -48,21 +52,28 @@ body {
     border: none;
     text-align: left;
     color: #100f0f;
-    pointer-events: none;
 }
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 
 .buttons button {
     padding: 16px 8px;
     border-radius: 8px;
     border: none;
-    background-color: #101010;
-    color: #fff;
+    background-color: #fff;
+    color: #101010;
     font-size: 18px;
     cursor: pointer;
 }
 
 .buttons button:hover {
     box-shadow: 3px 5px 0px #0776c5;
+    border: 1px solid #000;
 
 }
 
@@ -72,4 +83,9 @@ body {
 
 .operator {
     color: #0776c5 !important;
+}
+
+.equal {
+    background-color: #0776c5 !important;
+    color: #fff !important;
 }

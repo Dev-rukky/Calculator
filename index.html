@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Calculator</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    
+
 </head>
+
 <body>
     <div class="container">
-        <input type="text" class="display">
+        <input type="text" class="display" inputmode="numeric" readonly>
 
 
         <div class="buttons">
@@ -37,11 +39,12 @@
             <button data-value="0">0</button>
             <button data-value="00">00</button>
             <button data-value=".">.</button>
-            <button class="operator" data-value="=">=</button>
+            <button class="operator equal" data-value="=">=</button>
         </div>
     </div>
 
 
     <script src='main.js'></script>
 </body>
+
 </html>

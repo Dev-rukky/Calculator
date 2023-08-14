@@ -20,4 +20,16 @@ const calculate = (btnValue) => {
 
 buttons.forEach((button) => {
     button.addEventListener("click", (e) => calculate(e.target.dataset.value));
-})
+});
+
+// display.addEventListener("keyup", (e) => {
+//     if (e.key === "Enter") {
+//         calculate("=");
+//     }
+// });
+
+// display.addEventListener("keyup", (e) => {
+//     if (e.key === "Enter") {
+//         calculate("=");
+//     }
+// });
