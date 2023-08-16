@@ -1,21 +1,21 @@
 const display = document.querySelector(".display");
 const buttons = document.querySelectorAll("button");
-const specialChar = ["%", "*", "-", "+", "/", "="];
-let output = "";
+const specialChars = ["%", "*", "-", "+", "/", "="];
+let result = "";
 
 
-const calculate = (btnValue) => {
-    if (btnValue === "=" && output !== "") {
-        output = eval(output.replace("%", "/100"));
-    } else if (btnValue === "AC") {
-        output = "";
-    } else if (btnValue === "DEL") {
-        output = output.toString().slice(0, -1);
+const calculate = (btnVal) => {
+    if (btnVal === "=" && result !== "") {
+        result = eval(result.replace("%", "/100"));
+    } else if (btnVal === "AC") {
+        result = "";
+    } else if (btnVal === "DEL") {
+        result = result.toString().slice(0, -1);
     } else {
-        if (output === "" && specialChar.includes(btnValue)) return;
-        output += btnValue;
+        if (result === "" && specialChars.includes(btnVal)) return;
+        result += btnVal;
     }
-    display.value = output;
+    display.value = result;
 }
 
 buttons.forEach((button) => {
